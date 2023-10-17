@@ -74,11 +74,11 @@
             $pg = isset($_GET["pg"]) ? $_GET["pg"]:NULL;
             if(!$pg) 
                 require_once("home.php");
-              
+          
             if($pg=="101") 
                 require_once("vista/vusu.php");
             if($pg=="102") 
-                require_once("vista/vperf.php");
+                require_once("vista/vperfil.php");
             if($pg=="103") 
                 require_once("vista/vpag.php"); 
             if($pg=="104") 
