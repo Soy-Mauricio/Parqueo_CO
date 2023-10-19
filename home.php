@@ -77,10 +77,12 @@
           
             if($pg=="101") 
                 require_once("vista/vusu.php");
+
             if($pg=="102") 
                 require_once("vista/vperfil.php");
+
             if($pg=="103") 
-                require_once("vista/vpag.php"); 
+                require_once("vista/vreservas.php"); 
             if($pg=="104") 
                 require_once("vista/vubi.php"); 
             if($pg=="105") 
@@ -90,7 +92,8 @@
             if($pg=="107") 
                 require_once("vista/vval.php"); 
             if($pg=="108") 
-                require_once("vista/vval.php"); 
+                require_once("vista/vval.php");
+
             if($pg=="150") 
                 require_once("vista/vsalir.php"); 
             ?>

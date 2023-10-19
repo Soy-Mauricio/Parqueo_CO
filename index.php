@@ -81,11 +81,11 @@
         <div class="card mb-3" style="max-width: 850px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/Parqueadero1.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/Parqueadero1.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h6 class="card-title">Parqueadero Plaza antiago</h6>
+                <h6 class="card-title">Parqueadero Plaza Santiago</h6>
                 <p class="card-text">Esamos ubicados en la Plaza Santiago a 3,8KM del centro de la ciudad <br> 1 Noche 6.000 COP </p>
                 <input class="btn btn-success" type="submit" value="Ver Disponiblidad" style="background-color: #FF3D00;">
               </div>
@@ -96,7 +96,7 @@
         <div class="card mb-3" style="max-width: 850px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/Parqueo2.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/Parqueo2.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -111,7 +111,7 @@
         <div class="card mb-3" style="max-width: 850px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/Parqueo3.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/Parqueo3.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">

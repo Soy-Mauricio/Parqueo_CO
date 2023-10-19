@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <title>Parqueo.CO</title>
     </head>
-<body>
+
+<body class="M">
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
 
@@ -19,68 +20,51 @@
 </nav>
 
 
-<div class="container-xl px-4 mt-4">
+<div class="container mt-4">
     <div class="row">
-        <div class="col-xl-4">
-            <!-- Profile picture card-->
-            <div class="card mb-4 mb-xl-0">
+        <div class="col-md-4">
+            <!-- Profile picture card -->
+            <div class="card mb-4">
                 <div class="card-header">Foto de Perfil</div>
                 <div class="card-body text-center">
-                    <!-- Profile picture image-->
-                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt=""> <br>
-                    <!-- Profile picture upload button-->
+                    <!-- Profile picture image -->
+                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt=""><br>
+                    <!-- Profile picture upload button -->
                     <button class="btn btn-dark" type="button">Editar Foto</button>
                 </div>
             </div>
         </div>
 
-        <div class="col-xl-8">
-            <!-- Account details card-->
+        <div class="col-md-8">
+            <!-- Account details card -->
             <div class="card mb-4">
-                
+                <div class="card-header">Editar Detalles de la Cuenta</div>
                 <div class="card-body">
                     <form>
-                        <!-- Form Row-->
-                        <div class="row gx-3 mb-3">
-                            <!-- Form Group (first name)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputFirstName">Nombres</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="Ingresa tus nombres">
-                            </div>
-                            <!-- Form Group (last name)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputLastName">Apellidos</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="Ingresa tus apellidos">
-                            </div>
+                        <div class="form-group">
+                            <label for="inputFirstName">Nombres</label>
+                            <input class="form-control" id="inputFirstName" type="text" placeholder="Ingresa tus nombres">
                         </div>
-
-                        <!-- Form Row -->
-                        <div class="row gx-3 mb-3">
-                            <!-- Form Group (organization name)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputPhone">Número de celular</label>
-                                <input class="form-control" id="inputPhone" type="text" placeholder="Ingresa tu número">
-                            </div>
-                            <!-- Form Group (location)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputEmailAddress">Correo electrónico</label>
-                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="Correo">
-                            </div>
+                        <div class="form-group">
+                            <label for="inputLastName">Apellidos</label>
+                            <input class="form-control" id="inputLastName" type="text" placeholder="Ingresa tus apellidos">
                         </div>
-
-                        <div class="row gx-3 mb-3">
-                            <!-- Form Group (phone number)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputPassword">Contraseña</label>
-                                <input class="form-control" id="inputPassword" type="password" placeholder="Ingresa contraseña nueva">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputPassword">Contraseña</label>
-                                <input class="form-control" id="inputPassword" type="password" placeholder="Ingresa contraseña nueva">
-                            </div>
-
+                        <div class="form-group">
+                            <label for="inputPhone">Número de celular</label>
+                            <input class="form-control" id="inputPhone" type="text" placeholder="Ingresa tu número">
                         </div>
-                        <!-- Save changes button-->
+                        <div class="form-group">
+                            <label for="inputEmailAddress">Correo electrónico</label>
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Contraseña</label>
+                            <input class="form-control" id="inputPassword" type="password" placeholder="Ingresa contraseña nueva">
+                        </div>
+                                                <div class="form-group">
+                            <label for="inputPassword">Contraseña</label>
+                            <input class="form-control" id="inputPassword" type="password" placeholder="Ingresa contraseña nueva">
+                        </div> <br>
                         <button class="btn btn-dark" type="button">Guardar Cambios</button>
                     </form>
                 </div>

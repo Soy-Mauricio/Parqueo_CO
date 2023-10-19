@@ -163,7 +163,6 @@ body{margin-top:20px;
 
 /*Vista Perfil*/
 
-
 /*Resultados enlistados*/
 
 @media screen and (min-width: 780px) and (max-width: 1024px){
@@ -238,10 +237,18 @@ body{margin-top:20px;
         justify-content: center; 
         align-items: center; 
         height: 170vh; 
+        
     }
 
     .mb-3{
         width: 80%;
         text-align: center;
     }
+
+    .M{
+        height: 1100px;
+    }
+
+    
+
 }
