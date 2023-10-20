@@ -8,8 +8,8 @@
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <title>Parqueo.CO</title>
     </head>
-    
-<body class="B">
+
+<body class="S">
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
 
@@ -21,59 +21,53 @@
 
 <div class="container">
 
-  <h4 style="margin: 10px;">Reservas</h4>
+<h4 style="margin: 10px;">Favoritos</h4>
 
-  <div class="container text-center" style="margin-top: 40px;">
-    <div class="card mb-3" style="max-width: 900px; display: inline-block;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="/img/Parqueadero1.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
+    <div class="con_reserva">
+        <div class="container text-center" style="margin-top: 40px;">
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="/img/Parqueadero1.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="card-body">
+                    <h5 class "card-title">Parqueadero Plaza Santiago</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Medellin, Colombia <br> 3,8KM del centro </li>
+                    <li class="list-group-item">4.5 Puntuación</li>
+                    <li class="list-group-item">1 Noche <br> COP 6.000</li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Parqueadero Plaza Santiago</h5>
-            <p class="card-text">19 Oct - 23 Oct. Medellin <br> Hora entrada: 4:44PM - Hora salida: 1:00PM</p>
-            <h4>COP 27.000</h4>
-          </div>
+        
+        <div class="container text-center" style="margin-top: 40px;">
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="/img/Parqueo2.jpg" class="img-fluid rounded-start" alt="..." >
+                <div class="card-body">
+                    <h5 class "card-title">Parqueadero El Poblado</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Medellin, Colombia <br> 4,5KM del centro </li>
+                    <li class="list-group-item">4.8 Puntuación</li>
+                    <li class="list-group-item">1 Noche <br> COP 10.000</li>
+                </ul>
+            </div>
         </div>
-      </div>
+
+        <div class="con_reserva">
+        <div class="container text-center" style="margin-top: 40px;">
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="/img/Parqueo3.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="card-body">
+                    <h5 class "card-title">Parqueadero San Diego</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Medellin, Colombia <br> 2,8KM del centro </li>
+                    <li class="list-group-item">4.2 Puntuación</li>
+                    <li class="list-group-item">1 Noche <br> COP 9.000</li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="card mb-3" style="max-width: 900px; display: inline-block;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="/img/Parqueo2.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Parqueadero El Poblado</h5>
-            <p class="card-text">20 Nov - 22 Nov. Medellin <br> Hora entrada: 5:30AM - Hora salida: 2:10PM</p>
-            <h4>COP 10.000</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="card mb-3" style="max-width: 900px; display: inline-block;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="/img/Parqueo3.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Parqueadero San Diego</h5>
-            <p class="card-text">24 Dic - 30 Dic. Medellin <br> Hora entrada: 7:30AM - Hora salida: 8:30PM</p>
-            <h4>COP 54.000</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <footer class="text-center text-lg-start bg-light text-muted fixed-bottom">

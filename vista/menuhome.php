@@ -10,7 +10,7 @@
             <a class="nav-link active" aria-current="page" href="/vista/vreservas.php">Tus reservas</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.php?pg=104">Favoritos</a>
+            <a class="nav-link active" aria-current="page" href="/vista/vfavoritos.php">Favoritos</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="home.php?pg=150">Cerrar Sesión</a>

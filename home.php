@@ -84,7 +84,7 @@
             if($pg=="103") 
                 require_once("vista/vreservas.php"); 
             if($pg=="104") 
-                require_once("vista/vubi.php"); 
+                require_once("vista/vfavoritos.php"); 
             if($pg=="105") 
                 require_once("vista/vconf.php"); 
             if($pg=="106") 
