@@ -69,34 +69,50 @@
 
     <div class="contenedor_tres">
 
-    <?PHP 
-	    require_once("vista/menuhome.php");
-            $pg = isset($_GET["pg"]) ? $_GET["pg"]:NULL;
-            if(!$pg) 
-                require_once("home.php");
-          
-            if($pg=="101") 
-                require_once("vista/vusu.php");
+        <div class="card mb-3" style="max-width: 850px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Parqueadero1.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Parqueadero Plaza Santiago</h6>
+                <p class="card-text">Esamos ubicados en la Plaza Santiago a 3,8KM del centro de la ciudad <br> 1 Noche 6.000 COP </p>
+                <input class="btn btn-success" type="submit" value="Ver Disponiblidad" style="background-color: #FF3D00;">
+              </div>
+            </div>
+          </div>
+        </div>
 
-            if($pg=="102") 
-                require_once("vista/vperfil.php");
+        <div class="card mb-3" style="max-width: 850px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Parqueo2.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Parqueadero El Poblado</h6>
+                <p class="card-text">Estamos ubicados en el barrio El Poblado a 4,5KM del centro de la ciudad <br> 1 Noche 10.000 COP</p>
+                <input class="btn btn-success" type="submit" value="Ver Disponiblidad" style="background-color: #FF3D00;">
+              </div>
+            </div>
+          </div>
+        </div>
 
-            if($pg=="103") 
-                require_once("vista/vreservas.php"); 
-            if($pg=="104") 
-                require_once("vista/vfavoritos.php"); 
-            if($pg=="105") 
-                require_once("vista/vconf.php"); 
-            if($pg=="106") 
-                require_once("vista/vdom.php"); 
-            if($pg=="107") 
-                require_once("vista/vval.php"); 
-            if($pg=="108") 
-                require_once("vista/vval.php");
-
-            if($pg=="150") 
-                require_once("vista/vsalir.php"); 
-            ?>
+        <div class="card mb-3" style="max-width: 850px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Parqueo3.jpg" class="img-fluid rounded-start" style="height: 100%;" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Parqueadero San Diego</h6>
+                <p class="card-text">Estamos ubicados en el barrio San Diego a 2.8KM del centro de la ciudad <br> 1 Noche 9.000 COP </p>
+                <input class="btn btn-success" type="submit" value="Ver Disponiblidad" style="background-color: #FF3D00;">
+              </div>
+            </div>
+          </div>
+        </div>
 
     </div>
 
