@@ -11,14 +11,6 @@
 
 <body class="S">
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" >
-
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/home.php"><img src="/img/LOGO Parqueo.CO.jpeg" alt="" style="width: 50px;">Parqueo.CO</a>
-    </div>
-
-</nav>
-
 <div class="container">
 
 <h4 style="margin: 10px;">Favoritos</h4>
