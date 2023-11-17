@@ -12,7 +12,7 @@ function insper($user,$pass){
         // $pp = sha1(md5($pass));
         // Llamamos nuestro procedimiento almacenado
         // $sql = "CALL valida_usu(:user,:pass);";
-        $sql = "SELECT correo_electronico, nombre_usuario, apellido_usuario, telefono_usuario FROM usuario WHERE correo_electronico=:user AND contrasena=:pass;";
+        $sql = "SELECT id_usuario, nombre_usuario, apellido_usuario, id_perfil FROM usuario WHERE correo_electronico=:user AND contrasena=:pass;";
     $modelo=new conexion();
     $conexion=$modelo->get_conexion();
     $result=$conexion->prepare($sql);
@@ -29,10 +29,10 @@ function insper($user,$pass){
     $coutR = is_countable($res);
         if($coutR==1){
             //Capturamos en variables de sesión los datos de nuestro usuario
-                $_SESSION["email"] = $res[0]['correo_electronico'];
+                $_SESSION["id_usuario"] = $res[0]['id_usuario'];
                 $_SESSION["nombre"] = $res[0]['nombre_usuario'];
                 $_SESSION["apellido"] = $res[0]['apellido_usuario'];
-                $_SESSION["telefono"] = $res[0]['telefono_usuario'];
+                $_SESSION["id_perfil"] = $res[0]['id_perfil'];
             //Variable de seguridad (MSeguridad.php)
                 $_SESSION["autentificado"] = '¿*-?¡--@';
             //Autorizamos el ingreso a (home.php=Mod_Admin)(HTML-JS)

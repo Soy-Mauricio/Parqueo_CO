@@ -3,14 +3,14 @@
     include("modelo/conexion.php");
     include("modelo/musu.php");
     
-
+	
     //1.3. Instanciamos el modelo a variable php
 	$musu = new musu();
 
     //1.3.1. Creamos las Variables PHP para capturar los datos del Formulario
 	$id_usuario = isset($_POST['id_usuario']) ? $_POST['id_usuario']:NULL;
 	if (!$id_usuario)
-	$id_usuario = isset($_GET['id_usuario']) ? $_GET['id_usuario']:NULL;
+		$id_usuario = isset($_GET['id_usuario']) ? $_GET['id_usuario']:NULL;
 	$nombre_usuario = isset($_POST['nombre_usuario']) ? $_POST['nombre_usuario']:NULL;
 	$apellido_usuario = isset($_POST['apellido_usuario']) ? $_POST['apellido_usuario']:NULL;
 	$correo_electronico = isset($_GET['correo_electronico']) ? $_GET['correo_electronico']:NULL;
@@ -20,7 +20,7 @@
     //1.3.1.1. Encriptamos Contraseña
 	$contra = sha1(md5($contrasena));
 	$contrasena = $contra;
-	$foto_usuario = isset($_POST['id_perfil']) ? $_POST['id_perfil']:NULL;
+	$id_perfil = isset($_POST['id_perfil']) ? $_POST['id_perfil']:NULL;
 
 	//1.3.2. Capturamos la acción (C-U-D) metodo - POST(Form)
 	$opera = isset($_POST['operacion']) ? $_POST['operacion']:NULL;
@@ -169,8 +169,8 @@
 					$txt .= '<td>';
 						$txt .= '<select class="form-select" name="id_perfil">';
 						foreach ($result as $f) {
-							$txt .= '<option value="'.$f['perfid'].'" ';
-							if($f['perfid'] and $f['perfid']==$result1[0]["id_perfil"])
+							$txt .= '<option value="'.$f['pefid'].'" ';
+							if($f['pefid'] and $f['pefid']==$result1[0]["id_perfil"])
 								$txt .="SELECTED";
 							$txt .= ' >'.$f['perfnom'].'</option>';
 						}
@@ -261,7 +261,7 @@
 					$txt .= '<td align="center"><a href="home.php?pg=101&id_usuario='.$f["id_usuario"].'">
 						<img src="img/new.png" title="Actualizar"</a></td>';
 					//ICONOS-Eliminar (Boton)
-					$txt .= '<td align="center"><a href="../vista/vusu.php=&del='.$f["id_usuario"].'">
+					$txt .= '<td align="center"><a href="home.php?pg=101&del='.$f["id_usuario"].'">
 						<img src="img/trash.png" title="Eliminar"</a></td>';
 				//Cierre ROW - Datos de la tabla
 				$txt .= '</tr>';

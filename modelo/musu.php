@@ -8,17 +8,17 @@ class musu{
 	 	//variable $modelo le heredo la funcion de mi clase
 	 	$conexion = $modelo->get_conexion();
 	 	//Llamado de mi PROCEDURE almacenado y envio parametros
-	 	$sql = "CALL insert_usu(:id_usuarionew, :nombreusuarionew, :apellidousuarionew, :correonew, :telefonousuarionew, :contrasenanew, :id_perfilnew);";
+	 	$sql = "CALL insert_usu(:idusunew, :nombrenew, :apellidonew, :correonew, :telnew, :contrasenanew, NULL, NULL, NULL, :idperfilnew);";
 	 	//Creo variable $result para alistar la consulta con parametros
 	 	$result = $conexion->prepare($sql);
 	 	//Reemplazo los parámetros (PRECEDURE) por los recibidos desde el Controlador(función)
-	 	$result->bindParam(':id_usuarionew',$id_usuario);
-	 	$result->bindParam(':nombreusuarionew',$nombre_usuario);
-	 	$result->bindParam(':apellidousuarionew',$apellido_usuario);
-		 $result->bindParam(':correonew',$correo_electronico);
-	 	$result->bindParam(':telefonousuarionew',$telefono_usuario);
+	 	$result->bindParam(':idusunew',$id_usuario);
+	 	$result->bindParam(':nombrenew',$nombre_usuario);
+	 	$result->bindParam(':apellidonew',$apellido_usuario);
+		$result->bindParam(':correonew',$correo_electronico);
+	 	$result->bindParam(':telnew',$telefono_usuario);
 	 	$result->bindParam(':contrasenanew',$contrasena);
-	 	$result->bindParam(':id_perfilnew',$id_perfil);
+	 	$result->bindParam(':idperfilnew',$id_perfil);
 	 	//Valido si la variable $result(Esta Vacia)
 	 	if(!$result)
 	  		echo "<script>alert('ERROR al insertar Usuario');</script>";
@@ -46,6 +46,7 @@ class musu{
 		$conexion = $modelo->get_conexion(); 
 		$sql = "UPDATE usuario SET nombre_usuario=:nombre_usuario, apellido_usuario=:apellido_usuario, correo_electronico=:correo_electronico, telefono_usuario=:telefono_usuario, contrasena=:contrasena, id_perfil=:id_perfil WHERE id_usuario=:id_usuario;";
 		$result = $conexion->prepare($sql);
+		$result->bindParam(':id_usuario',$id_usuario);
 		$result->bindParam(':nombre_usuario',$nombre_usuario);
 		$result->bindParam(':apellido_usuario',$apellido_usuario);
 		$result->bindParam(':correo_electronico',$correo_electronico);
@@ -80,7 +81,7 @@ class musu{
 		$resultado = null;
 		$modelo = new conexion();
 		$conexion = $modelo->get_conexion();
-		$sql = "SELECT perfid, perfnom	FROM perfil;";
+		$sql = "SELECT pefid, perfnom	FROM perfil;";
 		$result = $conexion->prepare($sql);
 		$result->execute();
 		while($f=$result->fetch()){
