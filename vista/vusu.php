@@ -27,7 +27,7 @@
     <hr width="100%"><!--Linea inferior-->
     <br><!--Salto de Linea-->
     <?php
-        tabla_mostrar();
+        tabla_mostrar($conp, $nreg, $pg, $bo,$filtro, $arc);
     ?>
 
 

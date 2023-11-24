@@ -9,7 +9,7 @@ insper($user,$pass);
 function insper($user,$pass){
     if($user && $pass){
         //Encriptamos el campo ($pass en $pp)
-        // $pp = sha1(md5($pass));
+        $pp = sha1(md5($pass));
         // Llamamos nuestro procedimiento almacenado
         // $sql = "CALL valida_usu(:user,:pass);";
         $sql = "SELECT id_usuario, nombre_usuario, apellido_usuario, id_perfil FROM usuario WHERE correo_electronico=:user AND contrasena=:pass;";
@@ -18,7 +18,7 @@ function insper($user,$pass){
     $result=$conexion->prepare($sql);
     //Enviamos los parámetros de nuestra consulta
     $result->bindparam(':user',$user);
-    $result->bindparam(':pass',$pass);
+    $result->bindparam(':pass',$pp);
     if($result)
         //Ejecutamos la consulta
         $result->execute();
